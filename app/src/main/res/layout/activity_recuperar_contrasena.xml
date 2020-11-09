@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="550dp"
+        app:srcCompat="@drawable/logo" />
+
+
+    <ScrollView
+        android:layout_width="250dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/button_round">
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="58dp"
+        android:fontFamily="@font/robotomedium"
+        android:text="Una vez confirmado el correo se te enviará un código de verificación para cambiar la contraseña "
+        android:textColor="#7F7F7F"
+        android:textSize="15dp" />
+
+
+    <EditText
+        android:id="@+id/recuperar"
+        android:layout_width="229dp"
+        android:layout_height="40dp"
+        android:ems="20"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="60dp"
+        android:hint="Ingresa el correo registrado"
+        android:textColorHint="#FFFF"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:background="@drawable/text_round"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/robotomedium"
+        android:text="Politica de tratamiento de datos"
+        android:textColor="#7F7F7F"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="199dp"
+        android:fontFamily="@font/robotoblack"
+        android:text="Recuperar contraseña"
+        android:textColor="#7F7F7F"
+        android:textSize="27dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="383dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="@font/robotomedium"
+        android:text="Confirmar"
+        android:textColor="#7F7F7F" />
+
+
+    <ImageView
+        android:id="@+id/myview"
+        android:layout_width="368dp"
+        android:layout_height="706dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/sombra"
+        android:orientation="vertical" />
+
+
+</RelativeLayout>

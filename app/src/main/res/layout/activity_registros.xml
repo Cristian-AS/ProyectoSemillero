@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/fondobl"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/fondo_blanco"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imagen1"
+            android:layout_width="290dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txtBND"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagen1"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Registro"
+            android:textColor="#7F7F7F"
+            android:textSize="36sp" />
+
+        <LinearLayout
+            android:id="@+id/azul"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/txtBND"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/cuadro_azul"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/campos_registro"
+                android:gravity="center"
+                android:hint="Nombre Completo"
+                android:textColorHint="#FFFF" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/campos_registro"
+                android:gravity="center"
+                android:hint="Correo Electrónico"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#FFFF" />
+
+            <EditText
+                android:id="@+id/txtPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/campos_registro"
+                android:gravity="center"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textColorHint="#FFFF" />
+
+            <Button
+                android:id="@+id/btnRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_registrar"
+                android:text="Registrate"
+                android:textColor="#000000"
+                android:textCursorDrawable="@drawable/btn_registrar"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtredes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/azul"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Conectar con"
+            android:textColor="#7F7F7F"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/btngoogle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtredes"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_redes"
+            android:src="@drawable/googlee" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/txtredes"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/btngoogle"
+            android:background="@drawable/btn_redes"
+            android:src="@drawable/facebook" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fondobl"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Política de tratamientos de datos"
+        android:textColor="#BEBEBE"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
