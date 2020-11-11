@@ -35,7 +35,7 @@
         android:layout_marginLeft="68dp"
         android:layout_marginTop="199dp"
         android:fontFamily="@font/robotoblack"
-        android:text="¡Inicio de cesion!"
+        android:text="¡Inicio de sesion!"
         android:textColor="#7F7F7F"
         android:textSize="30dp" />
 
